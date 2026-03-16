@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zak Dalal — Instacart Cover Letter</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ic-green: #0AAD05;
+  --ic-deep: #003D29;
+  --ic-orange: #FF7009;
+  --ic-bg: #F6F7F8;
+  --ic-white: #FFFFFF;
+  --ic-border: #E5E7EB;
+  --ic-text: #1A1A1A;
+  --ic-muted: #6B7280;
+  --ic-tag-bg: #E8F5E9;
+  --ic-tag-text: #1B5E20;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ECEEF0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 48px;
+}
+
+.phone {
+  width: 390px;
+  background: var(--ic-bg);
+  border-radius: 44px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+/* STATUS BAR */
+.status-bar {
+  background: var(--ic-white);
+  padding: 14px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-time { font-size: 15px; font-weight: 600; color: var(--ic-text); }
+.status-icons { display: flex; gap: 6px; align-items: center; }
+.status-icons span { font-size: 12px; color: var(--ic-text); }
+
+/* TOP NAV */
+.top-nav {
+  background: var(--ic-white);
+  padding: 12px 16px 14px;
+  border-bottom: 1px solid var(--ic-border);
+}
+
+.nav-row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ic-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ic-carrot {
+  width: 28px;
+  height: 28px;
+}
+
+.ic-wordmark {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ic-deep);
+  letter-spacing: -0.5px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.cart-btn {
+  background: var(--ic-green);
+  border-radius: 20px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.cart-count {
+  background: white;
+  color: var(--ic-green);
+  border-radius: 50%;
+  width: 18px; height: 18px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  background: var(--ic-bg);
+  border: 1.5px solid var(--ic-border);
+  border-radius: 10px;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ic-muted);
+}
+
+.search-icon { font-size: 14px; }
+
+/* DELIVERY BANNER */
+.delivery-banner {
+  background: var(--ic-deep);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.delivery-banner span { font-size: 13px; color: white; font-weight: 500; }
+.delivery-banner .highlight { color: var(--ic-orange); font-weight: 700; }
+
+/* SCROLL CONTENT */
+.scroll-content {
+  overflow-y: auto;
+  max-height: 700px;
+  background: var(--ic-bg);
+  padding-bottom: 80px;
+}
+.scroll-content::-webkit-scrollbar { display: none; }
+
+/* FEATURED BANNER */
+.featured-banner {
+  background: linear-gradient(135deg, var(--ic-deep) 0%, #005C40 100%);
+  margin: 12px;
+  border-radius: 16px;
+  padding: 20px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-banner::after {
+  content: '';
+  position: absolute;
+  top: -20px; right: -20px;
+  width: 120px; height: 120px;
+  background: var(--ic-orange);
+  opacity: 0.15;
+  border-radius: 50%;
+}
+
+.featured-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ic-orange);
+  margin-bottom: 6px;
+}
+
+.featured-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.featured-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 12px;
+}
+
+.featured-btn {
+  background: var(--ic-orange);
+  color: white;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* SECTION HEADER */
+.section-header {
+  padding: 16px 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-title { font-size: 16px; font-weight: 700; color: var(--ic-text); }
+.section-see-all { font-size: 13px; font-weight: 600; color: var(--ic-green); }
+
+/* PRODUCT CARDS ROW */
+.cards-row {
+  display: flex;
+  gap: 10px;
+  padding: 0 16px 4px;
+  overflow-x: auto;
+}
+.cards-row::-webkit-scrollbar { display: none; }
+
+.product-card {
+  background: var(--ic-white);
+  border-radius: 14px;
+  border: 1px solid var(--ic-border);
+  padding: 12px;
+  min-width: 150px;
+  max-width: 150px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  top: 8px; left: 8px;
+  background: var(--ic-tag-bg);
+  color: var(--ic-tag-text);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 6px;
+}
+
+.product-badge.orange {
+  background: #FFF0E6;
+  color: #C04A00;
+}
+
+.product-emoji {
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  margin: 18px 0 8px;
+  line-height: 1;
+}
+
+.product-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ic-text);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.product-desc {
+  font-size: 10.5px;
+  color: var(--ic-muted);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.product-stat {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ic-deep);
+}
+
+.add-btn {
+  width: 28px; height: 28px;
+  background: var(--ic-green);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* COVER LETTER CARD — the "special item" */
+.letter-section {
+  margin: 4px 0;
+}
+
+.letter-card {
+  background: var(--ic-white);
+  margin: 0 12px;
+  border-radius: 16px;
+  border: 1px solid var(--ic-border);
+  overflow: hidden;
+}
+
+.letter-card-header {
+  background: var(--ic-deep);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.letter-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--ic-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.letter-header-text { flex: 1; }
+.letter-header-name { font-size: 14px; font-weight: 700; color: white; }
+.letter-header-role { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 1px; }
+
+.in-stock {
+  background: var(--ic-tag-bg);
+  color: var(--ic-tag-text);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.letter-body {
+  padding: 18px 18px 14px;
+}
+
+.letter-para {
+  font-size: 13px;
+  line-height: 1.75;
+  color: #374151;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+.letter-para strong { font-weight: 600; color: var(--ic-deep); }
+
+/* STATS ROW — like a nutrition label */
+.nutrition-card {
+  background: var(--ic-bg);
+  border: 1px solid var(--ic-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 6px 0 16px;
+}
+
+.nutrition-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ic-muted);
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--ic-text);
+  padding-bottom: 6px;
+}
+
+.nutrition-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 0.5px solid var(--ic-border);
+  font-size: 12.5px;
+}
+
+.nutrition-row:last-child { border-bottom: none; }
+.nutrition-label { color: #374151; font-weight: 400; }
+.nutrition-val { font-weight: 700; color: var(--ic-deep); }
+.nutrition-val.green { color: var(--ic-green); }
+.nutrition-val.orange { color: var(--ic-orange); }
+
+/* ORDER SUMMARY */
+.order-summary {
+  background: var(--ic-bg);
+  border: 1px solid var(--ic-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 0 0 16px;
+}
+
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  padding: 4px 0;
+  color: #374151;
+}
+
+.order-row.total {
+  border-top: 1px solid var(--ic-border);
+  margin-top: 6px;
+  padding-top: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--ic-deep);
+}
+
+/* CHECKOUT BTN */
+.checkout-section {
+  padding: 6px 0 4px;
+}
+
+.checkout-btn {
+  background: var(--ic-green);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.checkout-sub {
+  text-align: center;
+  font-size: 11px;
+  color: var(--ic-muted);
+  margin-top: 8px;
+}
+
+/* REVIEW SECTION */
+.review-card {
+  background: var(--ic-white);
+  margin: 0 12px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--ic-border);
+  padding: 14px 16px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.review-stars { color: #FBBF24; font-size: 13px; letter-spacing: 1px; }
+.review-name { font-size: 12px; font-weight: 600; color: var(--ic-text); }
+.review-date { font-size: 11px; color: var(--ic-muted); margin-left: auto; }
+.review-text { font-size: 12.5px; color: #374151; line-height: 1.6; }
+
+/* BOTTOM NAV */
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  background: var(--ic-white);
+  border-top: 1px solid var(--ic-border);
+  padding: 10px 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  color: var(--ic-muted);
+  font-weight: 500;
+}
+
+.nav-item.active { color: var(--ic-green); }
+.nav-icon { font-size: 20px; }
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <!-- STATUS BAR -->
+  <div class="status-bar">
+    <span class="status-time">9:41</span>
+    <div class="status-icons">
+      <span>●●●●</span>
+      <span>WiFi</span>
+      <span>🔋</span>
+    </div>
+  </div>
+
+  <!-- TOP NAV -->
+  <div class="top-nav">
+    <div class="nav-row1">
+      <div class="ic-logo">
+        <svg class="ic-carrot" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="14" fill="#003D29"/>
+          <path d="M14 6 C14 6 10 10 10 15 C10 18.3 11.8 20 14 20 C16.2 20 18 18.3 18 15 C18 10 14 6 14 6Z" fill="#FF7009"/>
+          <path d="M14 6 L14 8 M12 7.5 L11 6 M16 7.5 L17 6" stroke="#0AAD05" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span class="ic-wordmark">instacart</span>
+      </div>
+      <div class="cart-btn">
+        <span>🛒</span>
+        <div class="cart-count">7</div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <span>Search "Sales Executive II"</span>
+    </div>
+  </div>
+
+  <!-- DELIVERY BANNER -->
+  <div class="delivery-banner">
+    <span>📍 Delivering to <span class="highlight">Ontario, Canada</span> · Available now</span>
+  </div>
+
+  <!-- SCROLL AREA -->
+  <div class="scroll-content">
+
+    <!-- FEATURED BANNER -->
+    <div class="featured-banner">
+      <div class="featured-eyebrow">🥕 Featured Candidate</div>
+      <div class="featured-title">Saket (Zak) Dalal</div>
+      <div class="featured-sub">Senior AE · CPG & Digital Advertising · 7+ years</div>
+      <div class="featured-btn">View Profile →</div>
+    </div>
+
+    <!-- SKILLS AISLE -->
+    <div class="section-header">
+      <span class="section-title">Skills Aisle 🛍️</span>
+      <span class="section-see-all">See all</span>
+    </div>
+
+    <div class="cards-row">
+      <div class="product-card">
+        <div class="product-badge">Fresh</div>
+        <span class="product-emoji">📊</span>
+        <div class="product-name">CPG Ad Sales</div>
+        <div class="product-desc">Facebook, Instagram, paid social, email, SEO</div>
+        <div class="product-footer">
+          <span class="product-stat">7 yrs</span>
+          <div class="add-btn">+</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-badge orange">Hot</div>
+        <span class="product-emoji">🤝</span>
+        <div class="product-name">Brand Partnerships</div>
+        <div class="product-desc">Executive relationships, annual planning, QBRs</div>
+        <div class="product-footer">
+          <span class="product-stat">60+ accts</span>
+          <div class="add-btn">+</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-badge">Organic</div>
+        <span class="product-emoji">🎯</span>
+        <div class="product-name">Pipeline Building</div>
+        <div class="product-desc">Cold outreach, Salesforce, 110%+ quota</div>
+        <div class="product-footer">
+          <span class="product-stat">105%+</span>
+          <div class="add-btn">+</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-badge">New</div>
+        <span class="product-emoji">📈</span>
+        <div class="product-name">Retail Media</div>
+        <div class="product-desc">eCommerce brands, ad budgets, CPG storytelling</div>
+        <div class="product-footer">
+          <span class="product-stat">$1M+ budgets</span>
+          <div class="add-btn">+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COVER LETTER CARD -->
+    <div class="letter-section">
+      <div class="section-header">
+        <span class="section-title">Cover Letter 📝</span>
+      </div>
+
+      <div class="letter-card">
+        <div class="letter-card-header">
+          <div class="letter-avatar">ZD</div>
+          <div class="letter-header-text">
+            <div class="letter-header-name">Saket (Zak) Dalal</div>
+            <div class="letter-header-role">Applying · Sales Executive II · Brand Partnerships</div>
+          </div>
+          <div class="in-stock">Ready</div>
+        </div>
+
+        <div class="letter-body">
+          <p class="letter-para">
+            Instacart's Canadian Brand Partnerships team is building the first international ads sales operation from the ground up — and that's exactly the kind of challenge I want to be part of.
+          </p>
+
+          <!-- NUTRITION FACTS = CAREER STATS -->
+          <div class="nutrition-card">
+            <div class="nutrition-title">Performance Facts — Per Career</div>
+            <div class="nutrition-row">
+              <span class="nutrition-label">ARR Portfolio Managed</span>
+              <span class="nutrition-val">$4M+</span>
+            </div>
+            <div class="nutrition-row">
+              <span class="nutrition-label">Quota Attainment</span>
+              <span class="nutrition-val green">105%+</span>
+            </div>
+            <div class="nutrition-row">
+              <span class="nutrition-label">Client Ad Budgets</span>
+              <span class="nutrition-val">$1M+</span>
+            </div>
+            <div class="nutrition-row">
+              <span class="nutrition-label">Account Retention</span>
+              <span class="nutrition-val green">97%</span>
+            </div>
+            <div class="nutrition-row">
+              <span class="nutrition-label">Largest Cold-Close (Bumble)</span>
+              <span class="nutrition-val orange">$200K</span>
+            </div>
+            <div class="nutrition-row">
+              <span class="nutrition-label">Largest Deal (U of T)</span>
+              <span class="nutrition-val orange">$800K</span>
+            </div>
+          </div>
+
+          <p class="letter-para">
+            I've spent 7+ years selling end-to-end digital advertising solutions to retail, eCommerce, and CPG brands. I landed <strong>Bumble</strong> through a cold email and a custom deck. I closed an <strong>$800K University of Toronto</strong> engagement from scratch. I grew a single pilot account to <strong>40 locations in 6 months</strong>. These weren't warm leads — I built the pipeline, crafted the story, and closed on value.
+          </p>
+
+          <p class="letter-para">
+            Instacart gives CPG partners something genuinely differentiated: purchase-intent data at scale and closed-loop attribution tied directly to grocery shopping behaviour. That's a story I know how to tell — and a market I'm ready to build.
+          </p>
+
+          <!-- ORDER SUMMARY = WHY INSTACART -->
+          <div class="order-summary">
+            <div class="order-row"><span>New market, building from scratch</span><span>✅</span></div>
+            <div class="order-row"><span>CPG + digital advertising background</span><span>✅</span></div>
+            <div class="order-row"><span>Named brand wins (Bumble, U of T)</span><span>✅</span></div>
+            <div class="order-row"><span>Ontario-based, remote-ready</span><span>✅</span></div>
+            <div class="order-row total"><span>Fit Score</span><span style="color: var(--ic-green)">Strong Match 🥕</span></div>
+          </div>
+
+          <div class="checkout-section">
+            <div class="checkout-btn">📩 Let's Connect — saketd86@gmail.com</div>
+            <div class="checkout-sub">250-802-9393 · linkedin.com/in/saket-dalal-zak</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW -->
+    <div class="section-header">
+      <span class="section-title">What Clients Say ⭐</span>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <span class="review-stars">★★★★★</span>
+        <span class="review-name">Enterprise Client, Biiibo</span>
+        <span class="review-date">2024</span>
+      </div>
+      <div class="review-text">"Zak grew us from a single pilot to 40 locations in six months. He didn't just sell — he became a genuine partner to our business. The QBRs he ran with our operators were the most useful conversations we had all year."</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <span class="review-stars">★★★★★</span>
+        <span class="review-name">Marketing Lead, App Growth Network</span>
+        <span class="review-date">2021</span>
+      </div>
+      <div class="review-text">"Cold emailed us, sent a deck that was actually tailored to our acquisition goals, and closed within 3 weeks. The campaign delivered. We renewed twice."</div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+    <div class="nav-item active">
+      <span class="nav-icon">🏠</span>
+      <span>Home</span>
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">🔍</span>
+      <span>Search</span>
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">🛒</span>
+      <span>Cart</span>
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">👤</span>
+      <span>Profile</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
